@@ -1,0 +1,754 @@
+/********************************
+  Main
+*********************************/
+
+#main-page {
+  text-align: center;
+}
+
+#main-page h2 {
+  text-align: center;
+  background-image: none;
+  font-family: 'Arvo', serif;
+  font-size: 2rem;
+}
+
+#accountinfo {
+  text-align: center;
+}
+
+/********************************
+  Page border
+*********************************/
+
+html:before, html:after {
+  
+    content: "";
+    position: fixed;
+    background: #fff;
+    left: 0;
+    right: 0;
+    height: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+html:before {
+  
+    top: 0;
+    border-bottom: 20px solid #000;
+}
+
+html:after {
+  
+    bottom: 0;
+    border-top: 20px solid #000;
+}
+
+html {
+  
+    border: none;
+    z-index: 2;
+}
+
+#main-wrapper {
+  
+     box-shadow: inset #000000 0 0 0 20px;
+     overflow: hidden;
+
+}
+
+/********************************
+  Background Image control
+  note: organized by page/class
+*********************************/
+
+.poems {
+  background:no-repeat url(../images/bg-web.jpg);
+  background-position: 50% 0%;       
+  background-size: auto 100%;  /*background-size: 600% 600%;*/
+  display: block;
+  
+}
+
+.events {
+  background:no-repeat url(../images/bg-web.jpg);
+  background-position: 0% 40%;       
+  background-size: auto 100%;
+  display: block;
+  
+}
+
+.about {
+  background:no-repeat url(../images/bg-web.jpg);
+  background-position: 100% 40%;       
+  background-size: auto 100%;
+  display: block;
+}
+
+.index {
+  background:no-repeat url(../images/bg-web.jpg);
+  background-position: 100% 40%;       
+  background-size: auto 100%;
+  display: block;
+}
+
+.portfolio {
+  background:no-repeat url(../images/bg-web.jpg);
+  background-position: 50% 60%;
+  background-size: auto 200%;
+  display: block;
+  
+}
+
+/********************************
+  Header, title, and menu
+*********************************/
+
+header {
+  padding-top: 20px;
+  background: linear-gradient(black,black,black,transparent,transparent);
+  color: grey;
+  padding-bottom: 150px;
+}
+
+#menu {
+  
+}
+
+#menu-title h1 {
+ /* "display:inline" overlaps the headline text and the menu over the border*/
+ /* display: inline; */
+}
+
+#menu-title pre {
+ z-index: 5;
+ margin: 5px 5%;
+ font-family: 'Poiret One', cursive;
+ position: absolute;
+ display: inline-block;
+ line-height: 25px;
+ font-size: 2.5rem;
+ text-shadow: -3px 3px 5px rgba(100,100,100,.5),
+              -2px 2px 5px rgba(100,100,100,.6),
+              -1px 1px 1px rgba(100,100,100,1);
+ 
+}
+
+#menu-options {
+ z-index: 5;
+ position: relative;
+ display: inline-block;
+ float: right;
+ clear: right;
+ margin-top: -20px;
+}
+
+#menu-options ul {
+  
+  border-radius: 0 0 0 50%;
+  padding-left: 0px;
+  background-color: black;
+  display: inline-block;
+  margin: 0px 0 0 0;
+}
+
+#menu-options ul li {
+  
+  box-shadow: -5px 5px rgba(20,20,20,.25);
+  margin: 0px;
+  list-style: none;
+  padding: 10px 20px;
+  background: linear-gradient(to left, black,black, black, rgba(20,20,20,1), rgba(20,20,20,1));
+  text-align: center;
+  border-radius: 0;
+  display: block;
+}
+
+#menu-options ul li a{
+  
+  font-family: 'Arvo', serif;
+  text-decoration: none;
+  color: gray;
+}
+
+/********************************
+  About
+*********************************/
+
+.artistPicture {
+  display: inline-block;
+}
+
+.artistSummary {
+  display: inline-block;
+  text-align: center;
+  padding: 0 10%;
+  border-bottom: 3px solid #000000;
+  background: linear-gradient(transparent,rgba(255,255,255,0.6), rgba(255,255,255,0.6));
+  border-radius: 0 0 7px 7px;
+  margin: 20px 40px 0px 40px;
+  max-width: 400px;
+  vertical-align: top;
+}
+
+#profilePicture {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  box-shadow: -5px 5px 5px black;
+}
+
+#bio {
+  display: inline;
+  font-family: 'Arvo', serif;
+  text-align: center;
+  vertical-align: top;
+}
+
+/********************************
+  Portfolio
+*********************************/
+
+.galleryBody {
+  text-align: center;
+}
+
+.galleryName {
+  display: inline-block;
+  margin-bottom: 3px;
+  border-bottom: 2px solid black;
+  background: linear-gradient(transparent, rgba(255,255,255,0.1), rgba(255,255,255,0.5));
+  border-radius: 0 0 7px 7px;
+  text-align: center;
+}
+
+.galleryName h2 {
+  margin: 0;
+}
+
+/********************************
+  Portfolio Part 1: Slick
+*********************************/
+
+.slick-slide, .slick-slide .slick-cloned {
+  max-width: 200px;
+  padding: 0 82px;
+  
+}
+
+.slick-slide img
+{
+     width: 140px;
+     Height: 140px;
+     background: white;
+     padding: 20px;
+     box-shadow: -5px 5px 5px black;
+     border: none;
+     z-index: 0;
+     
+}
+
+.slick-next {
+  margin-left: 10%;
+}
+
+.slick-prev {
+  margin-right: 10%;
+}
+
+.slick-prev, .slick-next {
+  border-bottom: 2px solid black;
+  background: linear-gradient(transparent, rgba(255,255,255,0.1), rgba(255,255,255,0.5));
+  border-radius: 0 0 7px 7px;
+  padding: 0 5px;
+}
+
+.arrows {
+  text-align: center;
+}
+
+/********************************
+  Portfolio Part 1: Lightbox
+*********************************/
+
+#overlay {
+  text-align: center;
+  padding: 0% 0 40% 0;
+}
+
+.lightbox-image {
+    width: 70%;
+    height: 70%;
+    position: center;
+}
+
+/********************************
+  Events page
+*********************************/
+
+table {
+  margin:auto auto;
+  text-align: left;
+  font-size: .6rem;
+  position: relative;
+  font-family: 'Arvo', serif;
+}
+
+caption {
+  font-size: 1.2rem;
+}
+
+thead {
+ 
+ padding: 3% 3%; 
+ background: linear-gradient(transparent,rgba(255,255,255,0.6), rgba(255,255,255,0.6));
+ border-radius: 0 0 7px 7px;
+ border-bottom: 3px solid #000000;
+ text-align: center;
+}
+
+
+
+tr {
+ padding: 3% 3%; 
+ background: linear-gradient(transparent,rgba(255,255,255,0.6), rgba(255,255,255,0.6));
+ border-radius: 0 0 7px 7px;
+ border-bottom: 3px solid #000000;
+}
+
+td { 
+ padding: 3% 3%; 
+ background: linear-gradient(transparent,rgba(255,255,255,0.6), rgba(255,255,255,0.6));
+ border-radius: 0 0 7px 7px;
+ border-bottom: 3px solid #000000;
+}
+
+.citing {
+  background: transparent;
+}
+
+
+
+
+/********************************
+  Poems page
+*********************************/
+
+.centering {
+  text-align: center;
+}
+
+.poem {
+  display: block;
+  border-bottom: 3px solid #000000;
+  background: linear-gradient(transparent,rgba(255,255,255,0.6), rgba(255,255,255,0.6));
+  border-radius: 0 0 7px 7px;
+  max-height: 230px;
+  position: relative;
+  margin: auto auto;
+  text-align: center;
+  margin: 20px 40px 0px 40px;
+}
+
+.poemImage, .poemTitle, .poemText {
+  display: inline;
+  
+}
+
+.poemText {
+  font-family: 'Arvo', serif;
+  text-decoration: none;
+  color: black;
+  display: inline;
+  vertical-align: top;
+  font-size: 1.1rem;
+}
+
+.poemText b {
+  vertical-align: baseline;
+  margin: 0px 5%;
+  /* font-size: 40rem;*/
+  text-decoration: none;
+}
+
+footer {
+ Background: transparent;
+ color: black;
+ font-size: 3rem;
+} 
+
+/********************************
+  Responsive design
+*********************************/
+
+/*
+@media (min-width: 510px), 
+@media (orientation: portrait) {
+  
+  #menu-options {
+    padding-top: 30px;
+    margin-right: 3%;
+  }
+  
+  #menu-options ul li {
+   border-left: 2px solid;
+   display: inline-block;
+   border-radius: 5px;
+   padding: 5px;
+  }
+  
+  #menu-options ul li a{
+    font-size: 1em;
+    
+  }
+}
+*/ 
+
+
+@media (min-width: 340px) {
+  
+  .slick-slide {
+    
+  }
+  
+}
+
+@media (min-width: 375px) {
+  
+  /* Add Black border to picture */
+  
+  .slick-slide img {
+    border:15px solid #000; 
+  }
+  
+  #profilePicture {
+    border:15px solid #000; 
+  }
+  
+}
+
+@media (min-width: 425px) {
+  
+  /* Add white border to body */
+  
+  html {
+    border-left: 30px solid #fff;
+    border-right: 30px solid #fff;
+  }
+  
+  html::before, html::after {
+    margin: 0 30px;
+    height: 30px;
+  }
+  
+}
+
+@media (min-width: 470px) {
+
+  .slick-slide img {
+     width: 175px;
+     Height: 175px;
+  }
+  
+  .lightbox-image {
+    width:;
+    height:;
+    margin:;
+  }
+  
+  /* question this */
+  .poemText {
+    display: inline-block;
+  }
+
+}
+
+@media (min-width: 530px) {
+  
+  .slick-slide img {
+     width: 225px;
+     Height: 225px;
+  }
+  
+  .slick-slide, .slick-slide .slick-cloned {
+    padding: 0 100px;
+  }
+}
+
+@media (min-width: 590px) {
+  
+  .slick-slide img {
+     width: 125px;
+     Height: 125px;
+  }
+  
+  .slick-slide, .slick-slide .slick-cloned {
+    padding: 0 30px;
+  }
+  
+  table {
+    font-size: .8rem;
+  }
+  
+  
+}
+
+@media (min-width: 625px) {
+  
+  .slick-slide, .slick-slide .slick-cloned {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 625px) {
+  
+  .slick-slide img {
+     width: 145px;
+     Height: 145px;
+  }
+}
+
+
+@media (min-width: 690px) {
+
+  .slick-slide img {
+     width: 175px;
+     Height: 175px;
+  }
+  
+  .slick-slide, .slick-slide .slick-cloned {
+    padding: 0 50px;
+  }
+  
+  .lightbox-image {
+    width:;
+    height:;
+    margin:;
+  }
+  
+}
+
+@media (min-width: 740px) {
+  
+  #menu-options {
+   margin-top: 0px; 
+  }
+  
+  #menu-options ul {
+    box-shadow: none;
+    margin-top: 15px;
+    margin-right: 20px;
+    background-color: transparent;
+  }
+  
+  #menu-options ul li {
+    display: inline;
+    
+    border-bottom: 3px solid #000000;
+    background: linear-gradient(black, gray, rgba(255, 255, 255, 1));
+    border-radius: 0 0 7px 7px;
+  }
+  
+  #menu-options ul li a{
+    color: black;
+  }
+
+  .slick-slide, .slick-slide .slick-cloned {
+    padding: 0 65px;
+  }  
+  
+  .lightbox-image {
+    width:;
+    height:;
+    margin:;
+  }
+  
+  table {
+    font-size: 1.1rem;
+  }
+  
+}
+
+@media (min-width: 810px) {
+  
+.poems {
+  background:no-repeat url(../images/bg-web.jpg);
+  background-position: 50% 0%;       
+  background-size: 100% 100%;  /*background-size: 600% 600%;*/
+  display: block;
+  
+}
+  
+.events {
+  background:no-repeat url(../images/bg-desktop.jpg);
+  background-position: 0% 40%;       
+  background-size: auto 100%;
+  display: block;
+  
+}
+
+.about {
+  background:no-repeat url(../images/bg-desktop.jpg);
+  background-position: 100% 40%;       
+  background-size: auto 100%;
+  display: block;
+}
+
+.index {
+  background:no-repeat url(../images/bg-desktop.jpg);
+  background-position: 100% 40%;       
+  background-size: auto 100%;
+  display: block;
+}
+
+.portfolio {
+  background:no-repeat url(../images/bg-web.jpg);
+  background-position: 50% 60%;
+  background-size: 100% 100%;
+  display: block;
+  
+}
+  
+  #menu-options ul li {
+    margin: auto auto;
+  }
+  
+  .slick-slide img {
+     width: 200px;
+     Height: 200px;
+  }
+  
+  .slick-slide, .slick-slide .slick-cloned {
+    padding: 0 80px;
+  }
+}
+
+@media (min-width: 890px) {
+  
+  .slick-slide img {
+     width: 150px;
+     Height: 150px;
+  }
+  
+  .slick-slide, .slick-slide .slick-cloned {
+    padding: 0 35px;
+  }
+
+  /*#poems, #events, #portfolio, #index {
+    background:no-repeat url(../images/bg-desktop.jpg);
+    background-size: cover;
+    display: block;*/
+  }
+  
+}
+
+@media (min-width: 935px) {
+  
+  .slick-slide img {
+     width: 175px;
+     Height: 175px;
+  }
+  
+  .slick-slide, .slick-slide .slick-cloned {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 935px) {
+  
+  #profilePicture {
+    margin-left: 40px;
+  }
+  
+  .slick-slide, .slick-slide .slick-cloned {
+    padding: 0 45px;
+  }
+}
+
+@media (min-width: 1005px) {
+
+  .slick-slide img {
+     width: 175px;
+     Height: 175px;
+  }
+  
+  .slick-slide, .slick-slide .slick-cloned {
+    padding: 0 55px;
+  }
+  
+  .lightbox-image {
+    width:;
+    height:;
+    margin:;
+  }
+  
+}
+
+@media (min-width: 1075px) {
+
+  .slick-slide img {
+     width: 175px;
+     Height: 175px;
+  }
+  
+  .slick-slide, .slick-slide .slick-cloned {
+    padding: 0 70px;
+  }
+  
+  .lightbox-image {
+    width:;
+    height:;
+    margin:;
+  }
+  
+}
+
+@media (min-width: 1150px) {
+
+  .slick-slide img {
+     width: 200px;
+     Height: 200px;
+  }
+  
+  .lightbox-image {
+    width:;
+    height:;
+    margin:;
+  }
+  
+}
+
+@media (min-width: 1180px) {
+  
+  .slick-slide, .slick-slide .slick-cloned {
+      padding: 0 75px;
+    }
+}
+
+@media (min-width: 1215px) {
+  
+  .slick-slide, .slick-slide .slick-cloned {
+      padding: 0 90px;
+    }
+}
+
+@media (min-width: 1320px) {
+  
+  .slick-slide, .slick-slide .slick-cloned {
+      padding: 0 3.5rem;
+    }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
