@@ -64,7 +64,7 @@ html {
 *********************************/
 
 .poems {
-  background:no-repeat url(../images/bg-web.jpg);
+  background:no-repeat url(https://www.googledrive.com/host/0B118X4zVVeoANl9JcmNuTm5RLXc);
   background-position: 50% 0%;       
   background-size: auto 100%;  /*background-size: 600% 600%;*/
   display: block;
@@ -72,7 +72,7 @@ html {
 }
 
 .events {
-  background:no-repeat url(../images/bg-web.jpg);
+  background:no-repeat url(https://www.googledrive.com/host/0B118X4zVVeoANl9JcmNuTm5RLXc);
   background-position: 0% 40%;       
   background-size: auto 100%;
   display: block;
@@ -80,21 +80,21 @@ html {
 }
 
 .about {
-  background:no-repeat url(../images/bg-web.jpg);
+  background:no-repeat url(https://www.googledrive.com/host/0B118X4zVVeoANl9JcmNuTm5RLXc);
   background-position: 100% 40%;       
   background-size: auto 100%;
   display: block;
 }
 
 .index {
-  background:no-repeat url(../images/bg-web.jpg);
+  background:no-repeat url(https://www.googledrive.com/host/0B118X4zVVeoANl9JcmNuTm5RLXc);
   background-position: 100% 40%;       
   background-size: auto 100%;
   display: block;
 }
 
 .portfolio {
-  background:no-repeat url(../images/bg-web.jpg);
+  background:no-repeat url(https://www.googledrive.com/host/0B118X4zVVeoANl9JcmNuTm5RLXc);
   background-position: 50% 60%;
   background-size: auto 200%;
   display: block;
@@ -573,7 +573,7 @@ footer {
 @media (min-width: 810px) {
   
 .poems {
-  background:no-repeat url(../images/bg-web.jpg);
+  background:no-repeat url(https://www.googledrive.com/host/0B118X4zVVeoAREtuVEFETjRfNTg);
   background-position: 50% 0%;       
   background-size: 100% 100%;  /*background-size: 600% 600%;*/
   display: block;
@@ -581,7 +581,7 @@ footer {
 }
   
 .events {
-  background:no-repeat url(../images/bg-desktop.jpg);
+  background:no-repeat url(https://www.googledrive.com/host/0B118X4zVVeoAREtuVEFETjRfNTg);
   background-position: 0% 40%;       
   background-size: auto 100%;
   display: block;
@@ -589,21 +589,21 @@ footer {
 }
 
 .about {
-  background:no-repeat url(../images/bg-desktop.jpg);
+  background:no-repeat url(https://www.googledrive.com/host/0B118X4zVVeoAREtuVEFETjRfNTg);
   background-position: 100% 40%;       
   background-size: auto 100%;
   display: block;
 }
 
 .index {
-  background:no-repeat url(../images/bg-desktop.jpg);
+  background:no-repeat url(https://www.googledrive.com/host/0B118X4zVVeoAREtuVEFETjRfNTg);
   background-position: 100% 40%;       
   background-size: auto 100%;
   display: block;
 }
 
 .portfolio {
-  background:no-repeat url(../images/bg-web.jpg);
+  background:no-repeat url(https://www.googledrive.com/host/0B118X4zVVeoAREtuVEFETjRfNTg);
   background-position: 50% 60%;
   background-size: 100% 100%;
   display: block;
